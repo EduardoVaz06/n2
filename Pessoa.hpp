@@ -1,11 +1,14 @@
 #include <iostream>
+#include "Sistema.hpp"
+
+
 using namespace std;
 
 #ifndef PESSOA_hpp
 #define PESSOA_hpp
 
 
-class Pessoa
+class Pessoa : public Sistema
 {
 public:
     Pessoa(){};
@@ -20,11 +23,17 @@ public:
     void setTelefone(double tel);
     double getTelefone();
 
+    void imprimeInfo();
+
+    void atualizaPessoa(Pessoa pessoa);
+
+//    void listaTodos();
 
 protected:
     string nome;
     string endereco;
     double telefone;
+
 };
 
 #endif
