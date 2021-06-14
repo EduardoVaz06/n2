@@ -40,3 +40,4 @@ void Empregado::setCodigoSetor(int codSet)
     this->codSetor = codSet;
 }
 
+//
