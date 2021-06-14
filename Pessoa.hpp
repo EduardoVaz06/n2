@@ -1,6 +1,4 @@
 #include <iostream>
-#include "Sistema.hpp"
-
 
 using namespace std;
 
