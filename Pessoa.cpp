@@ -7,15 +7,37 @@ Pessoa::Pessoa(string nome, string en, double tel)
     this->telefone = tel;
 }
 
-/*void Pessoa::imprime()
+//metodos
+void Pessoa::imprimeInfo()
 {
-    cout << IdPessoa << " - Nome: " << nome << "\n    Categoria: " << Categoria << "\n    Nacionalidade: "
-     << Nacionalidade << "\n    Salario Bruto: " << SalarioBruto << "\n    Salario Liquido: " <<
-     SalarioLiq << endl;
-    cout << "    Data de nascimento: " << dia << "/" << mes << "/" << ano << endl;
+    cout << nome << endl;
+}
 
-}*/
+void Pessoa::atualizaPessoa(Pessoa pessoa)
+{
+    cout << "Informe nome: " << endl;
+    cin << pessoa.setNome() << endl;
 
+    cout << "Informe endereço: " << endl;
+    cin << pessoa.setEndereco() << endl;
+
+    cout << "Informe telefone: " << endl;
+    cin << pessoa.setTelefone() << endl;
+
+}
+/*
+void Pessoa::listaTodos()
+{
+    cout << "Pessoas cadastradas: "<< endl;
+
+ for (int j = 0; j < pessoasCadastradas.size(); j++)
+    {
+        pessoasCadastradas[j].imprimeInfo();
+        cout << "\n" << endl;
+    }
+}
+*/
+//gets e sets
 string Pessoa::getNome()
 {
     return nome;
