@@ -20,6 +20,14 @@ public:
 
     float obterSaldo();
 
+    void imprimeInfo();
+
+    void adicionaPessoa();
+
+    void atualizaPessoa();
+
+    void listaTodos();
+
 protected:
     float valorCred;
     float valorDiv;
