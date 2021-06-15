@@ -9,7 +9,7 @@ class Vendedor : public Empregado
 {
 public:
     Vendedor(){};
-    Vendedor(string n, string en, double tel, float salBase, float imp, int codSet, float comiss, float valVend);
+    Vendedor(string n, string en, int tel, float salBase, float imp, int codSet, float comiss, float valVend);
 
     void setValorVendas(float valVend);
     float getValorVendas();
@@ -25,4 +25,3 @@ protected:
 };
 
 #endif
-
