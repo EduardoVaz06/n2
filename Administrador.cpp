@@ -2,7 +2,7 @@
 
 Administrador::Administrador(string n, string en, int tel, float salBase, float imp, int codSet, float ajuCust)
 {
-    this->nome = nome;
+    this->nome = n;
     this->endereco = en;
     this->telefone = tel;
     this->salarioBase = salBase;
