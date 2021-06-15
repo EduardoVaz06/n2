@@ -2,7 +2,7 @@
 
 Empregado::Empregado(string n, string en, int tel, float salBase, float imp, int codSet)
 {
-    this->nome = nome;
+    this->nome = n;
     this->endereco = en;
     this->telefone = tel;
     this->salarioBase = salBase;
