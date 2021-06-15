@@ -26,11 +26,11 @@ void Administrador::calculaSalario()
     float salariofinal;
     salariofinal = (this->salarioBase - this->imposto) + (this->ajudaCusto);
 
-    cout << "Salario de " << nome << "eh: " << salariofinal << endl;
+    cout << "Salario de " << nome << " eh: " << salariofinal << endl;
 }
 
 void Administrador::imprimeInfo()
 {
-    cout << "Nome: " << nome << "\nEndereco: " << endereco << "\nTelefone: " << telefone << "\nSalario base: "
-    << salarioBase << "\nValor imposto: " << imposto << "\nAjuda de custo: " << ajudaCusto << "\n" << endl;
+    cout << " - Nome: " << nome << "\nEndereco: " << endereco << "\nTelefone: " << telefone << "\nSalario base: "
+    << salarioBase << "\nValor imposto: " << imposto << "\nSetor: " << codSetor << "\nAjuda de custo: " << ajudaCusto << endl;
 }
