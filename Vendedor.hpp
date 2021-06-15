@@ -19,6 +19,8 @@ public:
 
     void calculaSalario();
 
+    void imprimeInfo();
+
 protected:
     float valorVendas;
     float comissao;
