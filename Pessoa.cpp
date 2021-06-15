@@ -1,8 +1,8 @@
 #include "Pessoa.hpp"
 
-Pessoa::Pessoa(string nome, string en, int tel)
+Pessoa::Pessoa(string n, string en, int tel)
 {
-    this->nome = nome;
+    this->nome = n;
     this->endereco = en;
     this->telefone = tel;
 }
