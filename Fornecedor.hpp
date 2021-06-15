@@ -22,8 +22,6 @@ public:
 
     void imprimeInfo();
 
-//    void atualizaPessoa();
-
 protected:
     float valorCred;
     float valorDiv;
