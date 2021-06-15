@@ -10,7 +10,7 @@ class Fornecedor : public Pessoa
 {
 public:
     Fornecedor(){};
-    Fornecedor(string n, string en, double tel, float valCred, float valDiv);
+    Fornecedor(string n, string en, int tel, float valCred, float valDiv);
 
     void setValorCred(float valCred);
     float getValorCred();
@@ -22,11 +22,7 @@ public:
 
     void imprimeInfo();
 
-    void adicionaPessoa();
-
-    void atualizaPessoa();
-
-    void listaTodos();
+//    void atualizaPessoa();
 
 protected:
     float valorCred;
@@ -34,4 +30,3 @@ protected:
 };
 
 #endif
-
