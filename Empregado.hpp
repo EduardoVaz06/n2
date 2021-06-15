@@ -10,7 +10,7 @@ class Empregado : public Pessoa
 {
 public:
     Empregado(){};
-    Empregado(string n, string en, double tel, float salBase, float imp, int codSet);
+    Empregado(string n, string en, int tel, float salBase, float imp, int codSet);
 
     void setSalarioBase(float salBase);
     float getSalarioBase();
@@ -21,7 +21,9 @@ public:
     void setCodigoSetor(int codSet);
     int getCodigoSetor();
 
-    virtual void calculaSalario() = 0;
+    virtual void calculaSalario();
+
+    void imprimeInfo();
 
 protected:
     float salarioBase;
@@ -30,6 +32,3 @@ protected:
 };
 
 #endif
-
-
-//df
