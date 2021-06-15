@@ -1,6 +1,6 @@
 #include "Vendedor.hpp"
 
-Vendedor::Vendedor(string n, string en, double tel, float salBase, float imp, int codSet, float valVend, float comiss)
+Vendedor::Vendedor(string n, string en, int tel, float salBase, float imp, int codSet, float valVend, float comiss)
 {
     this->nome = nome;
     this->endereco = en;
@@ -36,4 +36,3 @@ void Vendedor::calculaSalario()
 {
 
 }
-
