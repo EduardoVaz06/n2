@@ -42,8 +42,8 @@ void Empregado::setCodigoSetor(int codSet)
 
 void Empregado::imprimeInfo()
 {
-    cout << "Nome: " << nome << "\nEndereco: " << endereco << "\nTelefone: " << telefone << "\nSalario base: "
-    << salarioBase << "\nValor imposto: " << imposto << "\n"<< endl;
+    cout << " - Nome: " << nome << "\nEndereco: " << endereco << "\nTelefone: " << telefone << "\nSalario base: "
+    << salarioBase << "\nValor imposto: " << imposto << "\nSetor: " << codSetor << endl;
 }
 
 void Empregado::calculaSalario()
@@ -51,5 +51,5 @@ void Empregado::calculaSalario()
     float salariofinal;
     salariofinal = (this->salarioBase - this->imposto);
 
-    cout << "Salario de " << nome << "eh: " << salariofinal << endl;
+    cout << "Salario de " << nome << " eh: " << salariofinal << "\n" << endl;
 }
