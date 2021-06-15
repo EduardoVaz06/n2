@@ -68,7 +68,7 @@ void Sistema::adicionaVendedor(Vendedor vendedor)
 
 void Sistema::listaPessoas()
 {
-    cout << "Pessoas cadastradas: " << endl;
+    cout << "\nPessoas cadastradas: " << endl;
 
  for (int j = 0; j < pessoas.size(); j++)
     {
@@ -78,7 +78,7 @@ void Sistema::listaPessoas()
 
 void Sistema::listaFornecedores()
 {
-    cout << "Fornecedores cadastrados: " << endl;
+    cout << "\nFornecedores cadastrados: " << endl;
 
  for (int j = 0; j < fornecedores.size(); j++)
     {
@@ -88,40 +88,45 @@ void Sistema::listaFornecedores()
 
 void Sistema::listaEmpregados()
 {
-    cout << "Empregados cadastrados: " << endl;
+    cout << "\nEmpregados cadastrados: " << endl;
 
  for (int j = 0; j < empregados.size(); j++)
     {
         empregados[j].imprimeInfo();
+        empregados[j].calculaSalario();
     }
 }
 
 void Sistema::listaAdministradores()
 {
-    cout << "Administradores cadastrados: " << endl;
+    cout << "\nAdministradores cadastrados: " << endl;
 
  for (int j = 0; j < administradores.size(); j++)
     {
         administradores[j].imprimeInfo();
+        administradores[j].calculaSalario();
     }
 }
 
 void Sistema::listaOperarios()
 {
-    cout << "Operarios cadastrados: " << endl;
+    cout << "\nOperarios cadastrados: " << endl;
 
  for (int j = 0; j < operarios.size(); j++)
     {
         operarios[j].imprimeInfo();
+        operarios[j].calculaSalario();
     }
 }
 
 void Sistema::listaVendedores()
 {
-    cout << "Vendedores cadastrados: " << endl;
+    cout << "\nVendedores cadastrados: " << endl;
 
  for (int j = 0; j < vendedores.size(); j++)
     {
         vendedores[j].imprimeInfo();
+        vendedores[j].calculaSalario();
     }
 }
+
