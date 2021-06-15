@@ -1,6 +1,6 @@
 #include "Operario.hpp"
 
-Operario::Operario(string n, string en, double tel, float salBase, float imp, int codSet, float valProd, float comiss)
+Operario::Operario(string n, string en, int tel, float salBase, float imp, int codSet, float valProd, float comiss)
 {
     this->nome = nome;
     this->endereco = en;
