@@ -1,8 +1,8 @@
 #include "Fornecedor.hpp"
 
-Fornecedor::Fornecedor(string nome, string en, int tel, float valCred, float valDiv)
+Fornecedor::Fornecedor(string n, string en, int tel, float valCred, float valDiv)
 {
-    this->nome = nome;
+    this->nome = n;
     this->endereco = en;
     this->telefone = tel;
     this->valorCred = valCred;
