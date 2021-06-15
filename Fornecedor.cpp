@@ -1,6 +1,6 @@
 #include "Fornecedor.hpp"
 
-Fornecedor::Fornecedor(string nome, string en, double tel, float valCred, float valDiv)
+Fornecedor::Fornecedor(string nome, string en, int tel, float valCred, float valDiv)
 {
     this->nome = nome;
     this->endereco = en;
@@ -9,22 +9,17 @@ Fornecedor::Fornecedor(string nome, string en, double tel, float valCred, float 
     this->valorDiv = valDiv;
 }
 //metodos
-void Fornecedor::adicionaPessoa()
-{
-    cout << "adiciona pessoa ok" << endl;
-
-}
-
+/*
 void Fornecedor::atualizaPessoa()
 {
     cout << "atualiza pessoa ok" << endl;
 
 }
-
+*/
 void Fornecedor::imprimeInfo()
 {
-    cout << nome << endl;
-
+    cout << "Nome: " << nome << "\nEndereco: " << endereco << "\nTelefone: " << telefone << "\nValor de Credito: "
+    << valorCred << "\nValor de Divida: " << valorDiv << "\n"<< endl;
 }
 
 float Fornecedor::obterSaldo()
@@ -32,14 +27,14 @@ float Fornecedor::obterSaldo()
     float saldo;
     saldo = (this->valorCred - this->valorDiv);
 
-    cout << "Saldo e: " << saldo << endl;
+    cout << "Saldo eh: " << saldo << endl;
+
+    if(saldo < 0)
+    {
+        cout << "Fornecedor esta devendo!" << endl;
+    }
 
     return 0;
-}
-
-void Fornecedor::listaTodos()
-{
-
 }
 
 //gets e sets
@@ -62,6 +57,3 @@ void Fornecedor::setValorDiv(float valDiv)
 {
     this->valorDiv = valDiv;
 }
-
-
-
