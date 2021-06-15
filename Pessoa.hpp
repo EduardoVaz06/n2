@@ -6,11 +6,11 @@ using namespace std;
 #define PESSOA_hpp
 
 
-class Pessoa : public Sistema
+class Pessoa
 {
 public:
     Pessoa(){};
-    Pessoa(string n, string en, double tel);
+    Pessoa(string n, string en, int tel);
 
     void setNome(string n);
     string getNome();
@@ -18,19 +18,17 @@ public:
     void setEndereco(string en);
     string getEndereco();
 
-    void setTelefone(double tel);
-    double getTelefone();
+    void setTelefone(int tel);
+    int getTelefone();
 
-    void imprimeInfo();
+    virtual void imprimeInfo();
 
-    void atualizaPessoa(Pessoa pessoa);
-
-//    void listaTodos();
+    void atualizaPessoa();
 
 protected:
     string nome;
     string endereco;
-    double telefone;
+    int telefone;
 
 };
 
