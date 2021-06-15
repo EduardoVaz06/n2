@@ -23,8 +23,6 @@ public:
 
     virtual void imprimeInfo();
 
-    void atualizaPessoa();
-
 protected:
     string nome;
     string endereco;
