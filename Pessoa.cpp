@@ -10,21 +10,8 @@ Pessoa::Pessoa(string n, string en, int tel)
 //metodos
 void Pessoa::imprimeInfo()
 {
-    cout << "Nome: " << nome << "\nEndereco: " << endereco << "\nTelefone: " << telefone << "\n" << endl;
+    cout << " - Nome: " << nome << "\nEndereco: " << endereco << "\nTelefone: " << telefone << "\n" << endl;
 }
-/*
-void Pessoa::atualizaPessoa()
-{
-    cout << "Informe nome: " << endl;
-    cin << p1.setNome();
-
-    cout << "Informe endereço: " << endl;
-    cin << p1.setEndereco();
-
-    cout << "Informe telefone: " << endl;
-    cin << p1.setTelefone();
-
-}*/
 
 //gets e sets
 string Pessoa::getNome()
