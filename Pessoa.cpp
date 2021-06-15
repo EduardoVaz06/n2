@@ -1,6 +1,6 @@
 #include "Pessoa.hpp"
 
-Pessoa::Pessoa(string nome, string en, double tel)
+Pessoa::Pessoa(string nome, string en, int tel)
 {
     this->nome = nome;
     this->endereco = en;
@@ -10,33 +10,22 @@ Pessoa::Pessoa(string nome, string en, double tel)
 //metodos
 void Pessoa::imprimeInfo()
 {
-    cout << nome << endl;
-}
-
-void Pessoa::atualizaPessoa(Pessoa pessoa)
-{
-    cout << "Informe nome: " << endl;
-    cin << pessoa.setNome() << endl;
-
-    cout << "Informe endereço: " << endl;
-    cin << pessoa.setEndereco() << endl;
-
-    cout << "Informe telefone: " << endl;
-    cin << pessoa.setTelefone() << endl;
-
+    cout << "Nome: " << nome << "\nEndereco: " << endereco << "\nTelefone: " << telefone << "\n" << endl;
 }
 /*
-void Pessoa::listaTodos()
+void Pessoa::atualizaPessoa()
 {
-    cout << "Pessoas cadastradas: "<< endl;
+    cout << "Informe nome: " << endl;
+    cin << p1.setNome();
 
- for (int j = 0; j < pessoasCadastradas.size(); j++)
-    {
-        pessoasCadastradas[j].imprimeInfo();
-        cout << "\n" << endl;
-    }
-}
-*/
+    cout << "Informe endereço: " << endl;
+    cin << p1.setEndereco();
+
+    cout << "Informe telefone: " << endl;
+    cin << p1.setTelefone();
+
+}*/
+
 //gets e sets
 string Pessoa::getNome()
 {
@@ -58,12 +47,12 @@ void Pessoa::setEndereco(string en)
     this->endereco = en;
 }
 
-double Pessoa::getTelefone()
+int Pessoa::getTelefone()
 {
     return telefone;
 }
 
-void Pessoa::setTelefone(double tel)
+void Pessoa::setTelefone(int tel)
 {
     this->telefone = tel;
 }
