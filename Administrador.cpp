@@ -1,6 +1,6 @@
 #include "Administrador.hpp"
 
-Administrador::Administrador(string n, string en, double tel, float salBase, float imp, int codSet, float ajuCust)
+Administrador::Administrador(string n, string en, int tel, float salBase, float imp, int codSet, float ajuCust)
 {
     this->nome = nome;
     this->endereco = en;
@@ -22,6 +22,15 @@ void Administrador::setAjudaCusto(float ajuCust)
 }
 
 void Administrador::calculaSalario()
- {
+{
+    float salariofinal;
+    salariofinal = (this->salarioBase - this->imposto) + (this->ajudaCusto);
 
- }
+    cout << "Salario de " << nome << "eh: " << salariofinal << endl;
+}
+
+void Administrador::imprimeInfo()
+{
+    cout << "Nome: " << nome << "\nEndereco: " << endereco << "\nTelefone: " << telefone << "\nSalario base: "
+    << salarioBase << "\nValor imposto: " << imposto << "\nAjuda de custo: " << ajudaCusto << "\n" << endl;
+}
