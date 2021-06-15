@@ -9,16 +9,10 @@ Fornecedor::Fornecedor(string n, string en, int tel, float valCred, float valDiv
     this->valorDiv = valDiv;
 }
 //metodos
-/*
-void Fornecedor::atualizaPessoa()
-{
-    cout << "atualiza pessoa ok" << endl;
 
-}
-*/
 void Fornecedor::imprimeInfo()
 {
-    cout << "Nome: " << nome << "\nEndereco: " << endereco << "\nTelefone: " << telefone << "\nValor de Credito: "
+    cout << " - Nome: " << nome << "\nEndereco: " << endereco << "\nTelefone: " << telefone << "\nValor de Credito: "
     << valorCred << "\nValor de Divida: " << valorDiv << "\n"<< endl;
 }
 
