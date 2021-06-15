@@ -1,6 +1,6 @@
 #include "Empregado.hpp"
 
-Empregado::Empregado(string n, string en, double tel, float salBase, float imp, int codSet)
+Empregado::Empregado(string n, string en, int tel, float salBase, float imp, int codSet)
 {
     this->nome = nome;
     this->endereco = en;
@@ -40,4 +40,16 @@ void Empregado::setCodigoSetor(int codSet)
     this->codSetor = codSet;
 }
 
-//
+void Empregado::imprimeInfo()
+{
+    cout << "Nome: " << nome << "\nEndereco: " << endereco << "\nTelefone: " << telefone << "\nSalario base: "
+    << salarioBase << "\nValor imposto: " << imposto << "\n"<< endl;
+}
+
+void Empregado::calculaSalario()
+{
+    float salariofinal;
+    salariofinal = (this->salarioBase - this->imposto);
+
+    cout << "Salario de " << nome << "eh: " << salariofinal << endl;
+}
