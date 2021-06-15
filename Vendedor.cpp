@@ -34,5 +34,15 @@ void Vendedor::setComissao(float comiss)
 
 void Vendedor::calculaSalario()
 {
+    float salariofinal;
+    salariofinal = (this->salarioBase - this->imposto) + this->comissao;
 
+    cout << "Salario de " << nome << " eh: " << salariofinal << endl;
+}
+
+void Vendedor::imprimeInfo()
+{
+    cout << " - Nome: " << nome << "\nEndereco: " << endereco << "\nTelefone: " << telefone << "\nSalario base: "
+    << salarioBase << "\nValor imposto: " << imposto << "\nSetor: " << codSetor << "\nValor de vendas: " << valorVendas << "\nComissao: " <<
+    comissao << endl;
 }
